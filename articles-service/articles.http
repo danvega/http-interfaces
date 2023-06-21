@@ -1,0 +1,28 @@
+### Find All Articles
+GET http://localhost:8081/api/articles
+
+### Get Article by ID
+GET http://localhost:8081/api/articles/1
+
+### Create new article
+POST http://localhost:8081/api/articles
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "My 2nd Post",
+  "body": "My Second blog post"
+}
+
+### Update existing Content
+PUT http://localhost:8081/api/articles/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "My 2nd Post",
+  "body": "I have updated my 2nd blog post!"
+}
+
+### delete by id
+DELETE http://localhost:8081/api/articles/2
